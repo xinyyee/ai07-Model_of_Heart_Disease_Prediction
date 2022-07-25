@@ -1,2 +1,2 @@
-# ai07-Model_of_Heart_Disease_Prediction
+# ai07 Heart Disease Prediction Using Feedforward Neural Networl
  
