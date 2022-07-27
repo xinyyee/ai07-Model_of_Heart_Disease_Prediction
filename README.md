@@ -15,6 +15,7 @@ There is no unwanted features required to be removed.Next, the dataset was split
 
 ### 3.2 Model Pipeline 
 The architecture of the model and number of nodes of each layer was shown as figure below.The model consists of one input layer,two hidden layers where each hidden layer consists of rectified linear activation function,one dropout layer and one output layers with softmax function.
+
 ![Architecture of the Model](https://user-images.githubusercontent.com/109932205/181147681-4806872a-c84d-4371-bb00-2be96fbe3779.png)
 
 
