@@ -14,32 +14,37 @@ Jupyter notebook is the main IDE.The main framework used in this project are Pan
 There is no unwanted features required to be removed.Next, the dataset was splitted into train-validation-test sets with a ratio of 70:20:10.
 
 ### 3.2 Model Pipeline 
-The architecture of the model and number of nodes of each layer was shown as figure below.The model consists of one input layer,three hidden layers where each hidden layer consists of rectified linear activation function and one output layers with softmax function.
-![Architecture of the Model](https://user-images.githubusercontent.com/109932205/180715267-ea0290f9-aa73-4902-a5cd-4665798e73f4.png)
+The architecture of the model and number of nodes of each layer was shown as figure below.The model consists of one input layer,two hidden layers where each hidden layer consists of rectified linear activation function and one output layers with softmax function.
+![Architecture of the Model](https://user-images.githubusercontent.com/109932205/181147681-4806872a-c84d-4371-bb00-2be96fbe3779.png)
 
 
-The model was trained with a batch size of 64 and 100 epochs.Early stopping was implemented.Training was stopped at epoch 31 with loss and accuracy parameter was shown at the table below.Besides,the figure below show the graph of training process.
+The model was trained with a batch size of 64 and 100 epochs.Early stopping was implemented.Training was stopped at epoch 80 and the best model weights at 70 epoch.The loss and accuracy parameter of the best model weights was shown at the table below.Besides,the figure below show the graph of training process.
 
-|             | Training     | Validation    |
-| :---        |    :----:    |          ---: |
-| Loss        |   0.0624     |    0.0741     |
-| Accuracy(%) | 98.6         |   98.1        |
+|             | Training | Validation |
+| ----------- | -------- | ---------- |
+| Loss        | 0.0707   | 0.0640     |
+| Accuracy(%) | 97.49    | 98.05      |
+
+Based on the observation it show that the validation loss is lower than the training.This is due to the dropout layer only implement to the training process.Hence, it affect the training loss.It lead the scenario where the training loss is higher than the validation loss.
+
+Refer to the [Link](https://towardsdatascience.com/what-your-validation-loss-is-lower-than-your-training-loss-this-is-why-5e92e0b1747e#:~:text=Sometimes%20data%20scientists%20come%20across,we%20observe%20higher%20training%20loss.) for more explanation.
 
 
+![Graph](https://user-images.githubusercontent.com/109932205/181149306-644ef844-2088-4615-ab5a-3f7916ab880f.png)
 
-![Graph](https://user-images.githubusercontent.com/109932205/180720007-6a32aa7d-9e53-4a77-b997-910784322462.png)
 
 
 ## 4.Result 
 The result of test data was shown at figures below. 
+![image1](https://user-images.githubusercontent.com/109932205/181150216-6873f1af-7315-42a8-9e73-760dbc551e6b.png)
 
-![Evaluation score](https://user-images.githubusercontent.com/109932205/180721033-54b29928-54af-4f8e-86b3-f75fd412806e.png)
+
 
 Metrics of confusion matrix 
 
-![Confusion Matrix](https://user-images.githubusercontent.com/109932205/180721220-e579cbd1-44ab-4b13-89cd-3ad6d61846f4.png)
+![image2](https://user-images.githubusercontent.com/109932205/181150226-70b13714-a0e6-45f1-aa95-af747e331977.png)
 
-**The training result can improve by adding more layers and increasing the number of epoch.**
+
 
 
 
