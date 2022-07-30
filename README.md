@@ -1,4 +1,4 @@
-# ai07 Heart Disease Prediction Using Feedforward Neural Network
+# Heart Disease Prediction Using Feedforward Neural Network
 
 ## 1.Objective
 The objective of this project is to create a model of feedforward neural network to predict the presence of heart disease in the patient(Classification Problem).The model is trained with [Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset).
@@ -19,7 +19,7 @@ The architecture of the model and number of nodes of each layer was shown as fig
 ![Architecture of the Model](https://user-images.githubusercontent.com/109932205/181147681-4806872a-c84d-4371-bb00-2be96fbe3779.png)
 
 
-The model was trained with a batch size of 64 and 100 epochs.Early stopping was implemented.Training was stopped at epoch 80 and the best model weights at 70 epoch was restored.The loss and accuracy parameter of the best model weights was shown at the table below.Besides,the figure below show the graph of training process.
+The model was trained with a batch size of 64 and 100 epochs.Early stopping was implemented.Training was stopped at epoch 80 and the best model weights at 70 epoch was restored.The loss and accuracy parameter of the best model weights were shown at the table below.Besides,the figure below show the graph of training process.
 
 |             | Training | Validation |
 | ----------- | -------- | ---------- |
@@ -42,11 +42,11 @@ The result of test data was shown at figures below.
 
 
 
-Metrics of confusion matrix 
+Metrics of confusion matrix. 
 
 ![image2](https://user-images.githubusercontent.com/109932205/181150226-70b13714-a0e6-45f1-aa95-af747e331977.png)
 
-**The model able to achieve 97% classification accuracy for the test dataset**
+**The model able to achieve 97% classification accuracy for the test dataset.**
 
 
 
