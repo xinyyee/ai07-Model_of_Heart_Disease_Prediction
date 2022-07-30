@@ -6,7 +6,7 @@ The objective of this project is to create a model of feedforward neural network
 Refer to the link above for more details about the data.
 
 ## 2.IDE and Framework
-Jupyter notebook is the main IDE.The main framework used in this project are Pandas,Scikit-learn and Tensorflow Keras.
+Google Colab is the main IDE.The main framework used in this project are Pandas,Scikit-learn and Tensorflow Keras.
 
 
 ## 3.Methodology
