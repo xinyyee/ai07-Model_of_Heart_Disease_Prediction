@@ -14,19 +14,21 @@ Jupyter notebook is the main IDE.The main framework used in this project are Pan
 There is no unwanted features required to be removed.Next, the dataset was splitted into train-validation-test sets with a ratio of 70:20:10.
 
 ### 3.2 Model Pipeline 
-The architecture of the model and number of nodes of each layer was shown as figure below.The model consists of one input layer,two hidden layers where each hidden layer consists of rectified linear activation function,one dropout layer and one output layers with softmax function.
+<p align="justify"> 
+The architecture of the model and number of nodes of each layer was shown as figure below.The model consists of one input layer,two hidden layers where each hidden layer consists of rectified linear activation function,one dropout layer and one output layers with softmax function.</p>
 
 ![Architecture of the Model](https://user-images.githubusercontent.com/109932205/181147681-4806872a-c84d-4371-bb00-2be96fbe3779.png)
 
-
-The model was trained with a batch size of 64 and 100 epochs.Early stopping was implemented.Training was stopped at epoch 80 and the best model weights at 70 epoch was restored.The loss and accuracy parameter of the best model weights were shown at the table below.Besides,the figure below show the graph of training process.
+<p align="justify"> 
+The model was trained with a batch size of 64 and 100 epochs.Early stopping was implemented.Training was stopped at epoch 80 and the best model weights at 70 epoch was restored.The loss and accuracy parameter of the best model weights were shown at the table below.Besides,the figure below show the graph of training process.</p>
 
 |             | Training | Validation |
 | ----------- | -------- | ---------- |
 | Loss        | 0.0707   | 0.0640     |
 | Accuracy(%) | 97.49    | 98.05      |
 
-Based on the observation it show that the validation loss is lower than the training.This is due to the dropout layer only implement to the training process.Hence, it affect the training loss.It lead the scenario where the training loss is higher than the validation loss.
+<p align="justify"> 
+Based on the observation it show that the validation loss is lower than the training.This is due to the dropout layer only implement to the training process.Hence, it affect the training loss.It lead the scenario where the training loss is higher than the validation loss.</p>
 
 Refer to the [Link](https://towardsdatascience.com/what-your-validation-loss-is-lower-than-your-training-loss-this-is-why-5e92e0b1747e#:~:text=Sometimes%20data%20scientists%20come%20across,we%20observe%20higher%20training%20loss.) for more explanation.
 
